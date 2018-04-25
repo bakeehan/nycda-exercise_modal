@@ -1,0 +1,19 @@
+@media (max-width: 480px) {
+
+	h1 {
+		font-size:1.5em;
+	}
+
+	.modal {
+		left:30px;
+	}
+
+	.sidebar a {
+		margin:3px 10px;
+	}
+
+	.sidebar {
+		padding:5px 0;
+	}
+
+}
