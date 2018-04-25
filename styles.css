@@ -1,0 +1,91 @@
+body {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h3 {
+	font-family: 'Ubuntu', sans-serif;
+	margin: 15px 0 10px 10px;
+}
+
+.grid {
+	display: grid;
+    grid-template-areas:
+          'side title title'
+          'side body ads';
+    grid-template-columns: 1fr 4fr 1.5fr;
+}
+
+.sidebar {
+	grid-area:side;
+	background-color: grey;
+	/*font-family: 'Ubuntu', sans-serif;*/
+	padding-left:10px;
+}
+
+.sidebar a {
+	color:white;
+	letter-spacing: 1px;
+	display: block;
+	text-decoration: none;
+	font-style: italic;
+	margin:0 0 25px 5px;
+    -webkit-transition: letter-spacing 1s;
+    transition: letter-spacing 1s;
+}
+
+.sidebar a:hover {
+	letter-spacing: 4px;
+}
+
+.titlebar {
+	grid-area: title;
+	background-color: silver;
+	font-family: 'Ubuntu', sans-serif;
+	padding:0 25px;
+}
+
+h1 b {
+	text-transform: uppercase;
+	color:white;
+	font-size:1.25em;
+}
+
+.content {grid-area:body;}
+
+.adverts {
+	grid-area:ads;
+	padding-right:5px;
+}
+
+.content p, .adverts p, .modal p {
+	text-align: justify;
+	margin: 5px 15px;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 2;
+	top:30%;
+	left:35%;
+	width:300px;
+	background-color: lemonchiffon;
+	border:15px double red;
+	padding-bottom:10px;
+}
+
+.modal h2 {
+	display: block;
+	background-color: goldenrod;
+	text-align:center;
+	padding: 5px 0;
+}
+
+.xout {
+	float:right;
+	text-align: center;
+	padding:0 5px;
+	font-weight: bold;
+	background-color: red;
+	color:white;
+}
